@@ -1,0 +1,21 @@
+const
+  rpcGenerator = require("discordrpcgenerator"),
+
+  // Add your client id in the index.js file
+  IMAGE_NAME = "https://www.google.com/search?vsrid=CLrozZoGEAIYASIkNjExZmIzZjAtYzQ0OS00YzEyLTgyNzEtNjhjYzhkMDhkMDMx&gsessionid=bIVDR75HCCqARGOvskHYaOELGCoEihZlLA14qBzuUR4BcWgzsFwjKg&lsessionid=D4paiithjb3-CKrpn8_51tZJDjlfJuDK5Odp4TPTSHsfzoHublNXSg&vsdim=474,474&source=lns.web.iosbwsb&vsint=CAIqDAoCCAcSAggKGAEgATojChYNAAAAPxUAAAA_HQAAgD8lAACAPzABENoDGNoDJQAAgD8&lns_mode=un&udm=26&qsubts=1727530345316&biw=414&bih=720",
+  LARGE_TEXT = "Live",
+  SMALL_TEXT = "Join up",
+  LINK = "https://twitch.tv/SealedSaucer";
+ 
+module.exports = (1289577742307950696) => rpcGenerator.getRpcImage(CLIENT_ID, IMAGE_NAME)
+  .then(image => client.user.setPresence(
+    new rpcGenerator.Rpc()
+      .setName("twitch")
+      .setUrl(https://m.twitch.tv/stableronaldo?desktop-redirect=true)
+      .setType("STREAMING")
+      .setApplicationId(CLIENT_ID)
+      .setAssetsLargeImage(image.id)
+      .setAssetsLargeText(SMALL_TEXT)
+      .setDetails(LARGE_TEXT)
+      .toDiscord()
+  ));
